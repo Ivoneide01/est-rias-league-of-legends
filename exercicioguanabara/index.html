@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDADES</title>
+</head>
+<body>
+    <h1>Cidades</h1>
+
+    Vivendo em: <input type="text" name="txtcit" id="txtcit">
+    <input type="button" value="Verificar" onclick="cidade()">
+    <div id="res"></div>
+    
+    <script>
+        function cidade (){
+            var txtc = window.document.querySelector('input#txtcit')
+            var res = window.document.querySelector('div#res')
+            var cit = txtc.value
+            res.innerHTML = (txtc.value)
+            if(cit === "sp"){
+                res.innerHTML += `<p> voce está em são paulo</p>`
+                    
+            }else if(cit === "eua"){
+                res.innerHTML += `<p>Voce nao esta em sp</p>`
+            }else {res.innerHTML += `<p>nem em sao nem nos eua</p>`
+            }
+            
+            
+                
+           
+
+        }
+    </script>
+</body>
+</html>

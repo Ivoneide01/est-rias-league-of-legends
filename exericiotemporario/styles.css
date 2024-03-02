@@ -1,0 +1,185 @@
+body{
+    background-color: black;
+    
+}
+section{
+    color: aliceblue;
+    margin-top: 70px; 
+}
+header{
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center; /* Alinha o conteúdo do cabeçalho ao centro */
+
+}
+#btn{
+    width: 75px;
+    height: 25px;
+    border-radius: 15px;
+}
+.animate__animated .animate__bounce{
+    text-align: center;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Define a ordem de empilhamento atrás de tudo */
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Define a ordem de empilhamento atrás de tudo */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Define a ordem de empilhamento acima do vídeo */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 3em;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+.titulo {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: white; /* Cor do texto do link */
+    font-size: 24px; /* Tamanho da fonte do link */
+    text-align: center;
+}
+.titulo img{
+     
+        display: flex; /* Define a imagem como um bloco para que as propriedades de margem automática funcionem */
+        margin: 0 auto; /* Margem automática horizontalmente, centralizando a imagem */
+
+
+}
+.pesquisar{
+    
+
+}
+.pesquisar img {
+    width: 200px;
+    height: 25px;
+    margin-top: 30px;
+
+}
+
+.container {
+        width: 60%; /* Largura do contêiner */
+        margin: 0 auto; /* Margens automáticas para centralização horizontal */
+        background-color: #f0f0f0; /* Cor de fundo do contêiner */
+        padding: 20px; /* Espaçamento interno do contêiner */
+        border-radius: 8px; /* Borda arredondada */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        margin-bottom: 50px; /* Margem inferior para criar espaço abaixo do contêiner */
+      
+      
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Define o tamanho das colunas */
+    
+    
+
+    
+}
+
+.card {
+    
+    margin-bottom: 10px; /* Espaço entre os cards */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura do card */
+    display: inline-block; /* Define os cards para exibição em linha */
+    vertical-align: top; /* Alinha os cards no topo */
+    position: relative; /* Definir posição relativa */ 
+    margin-left: 5%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(171, 130, 202, 0.4) 50%, rgba(127, 3, 158, 0.6) 80%)
+}
+
+
+.card img {
+    max-height: 100%; /* Limitar a altura da imagem ao tamanho máximo do card */
+    border-radius: 25px; /* Adicionar borda arredondada, se necessário */
+    position: absolute; /* Definir posição absoluta para a imagem */
+    top: 0; /* Alinhar a imagem no topo do card */
+    left: 0;
+    width: 100px; /* Definir a largura da imagem como 100% do card */
+    height: 150px; /* Definir a altura da imagem como 100% do card */
+    object-fit: cover; /* Manter a proporção da imagem e preencher o espaço disponível */
+    object-position: left; /* Posicionar a imagem no centro do card */
+    
+    
+}
+article{
+    display:block
+     /* Alinha a imagem à direita do container */
+    
+}
+h2{
+    margin-top: 150%;
+}
+a{
+    color: rgb(162, 2, 255);
+}
+.buttonVermais{
+    display: inline-block;/* bloco retangular */
+    padding: 10px 15px; /* Ajuste o preenchimento conforme necessário */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(171, 130, 202, 0.4) 50%, rgba(4, 4, 4, 0.6) 80%);
+    color: white; /* Cor do texto do botão */
+    text-align: center;  
+    text-decoration: none; /* tirar o ___ em baixo de ver mais */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    cursor: pointer;  /* para indicar que é clicavel */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+#btn{
+    display: inline-block;/* bloco retangular */
+    padding: 0px; /* Ajuste o preenchimento conforme necessário */
+    background: radial-gradient(circle, rgba(148, 8, 199, 0.694) 20%, rgba(141, 26, 230, 0.637) 50%, rgba(0, 0, 0, 0.6) 80%);
+    color: white; /* Cor do texto do botão */
+    text-align: center;  
+    text-decoration: none; /* tirar o ___ em baixo de ver mais */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Borda arredondada do botão */
+    cursor: pointer;  /* para indicar que é clicavel */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+#text1{
+    width: 200px;
+    height: 20px;
+    border-radius: 30px;
+}
+
+  
+
+
+  
