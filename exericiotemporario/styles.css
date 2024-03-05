@@ -6,67 +6,28 @@ section{
     color: aliceblue;
     margin-top: 70px; 
 }
-header{
-    font-family:Arial, Helvetica, sans-serif;
-    color: aliceblue;
-    text-align: center; /* Alinha o conteúdo do cabeçalho ao centro */
 
-}
-#btn{
-    width: 75px;
-    height: 25px;
-    border-radius: 15px;
-}
+
 .animate__animated .animate__bounce{
     text-align: center;
 }
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    
-}
 
 
-.video-background {
+#video-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Define a ordem de empilhamento atrás de tudo */
+    z-index: -1;
+    object-fit: cover; /* Preenche toda a tela, mantendo a proporção */
 }
 
-#video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1; /* Define a ordem de empilhamento atrás de tudo */
-}
-
-.content {
-    position: relative;
-    z-index: 1; /* Define a ordem de empilhamento acima do vídeo */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.content h1 {
-    font-size: 3em;
-}
-
-.content p {
-    font-size: 1.5em;
-}
 .titulo {
     text-decoration: none; /* Remove o sublinhado do link */
     color: white; /* Cor do texto do link */
     font-size: 24px; /* Tamanho da fonte do link */
+    text-align: center;
     text-align: center;
 }
 .titulo img{
@@ -87,99 +48,267 @@ body, html {
 
 }
 
+.pesquisarTop{
+    text-align: center;
+}
+
 .container {
         width: 60%; /* Largura do contêiner */
         margin: 0 auto; /* Margens automáticas para centralização horizontal */
-        background-color: #f0f0f0; /* Cor de fundo do contêiner */
         padding: 20px; /* Espaçamento interno do contêiner */
         border-radius: 8px; /* Borda arredondada */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
         margin-bottom: 50px; /* Margem inferior para criar espaço abaixo do contêiner */
-      
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Define o tamanho das colunas */
+        
+        
       
   }
 
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Define o tamanho das colunas */
-    
-    
-
-    
-}
-
-.card {
-    
-    margin-bottom: 10px; /* Espaço entre os cards */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    box-sizing: border-box; /* Inclui o preenchimento e a borda na largura do card */
-    display: inline-block; /* Define os cards para exibição em linha */
-    vertical-align: top; /* Alinha os cards no topo */
-    position: relative; /* Definir posição relativa */ 
-    margin-left: 5%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(171, 130, 202, 0.4) 50%, rgba(127, 3, 158, 0.6) 80%)
-}
-
-
-.card img {
-    max-height: 100%; /* Limitar a altura da imagem ao tamanho máximo do card */
-    border-radius: 25px; /* Adicionar borda arredondada, se necessário */
-    position: absolute; /* Definir posição absoluta para a imagem */
-    top: 0; /* Alinhar a imagem no topo do card */
-    left: 0;
-    width: 100px; /* Definir a largura da imagem como 100% do card */
-    height: 150px; /* Definir a altura da imagem como 100% do card */
-    object-fit: cover; /* Manter a proporção da imagem e preencher o espaço disponível */
-    object-position: left; /* Posicionar a imagem no centro do card */
-    
-    
-}
-article{
-    display:block
-     /* Alinha a imagem à direita do container */
-    
-}
-h2{
-    margin-top: 150%;
-}
-a{
-    color: rgb(162, 2, 255);
-}
-.buttonVermais{
-    display: inline-block;/* bloco retangular */
-    padding: 10px 15px; /* Ajuste o preenchimento conforme necessário */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%, rgba(171, 130, 202, 0.4) 50%, rgba(4, 4, 4, 0.6) 80%);
-    color: white; /* Cor do texto do botão */
-    text-align: center;  
-    text-decoration: none; /* tirar o ___ em baixo de ver mais */
-    font-size: 16px; /* Tamanho da fonte do botão */
-    border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Borda arredondada do botão */
-    cursor: pointer;  /* para indicar que é clicavel */
-    font-weight: bold; /* Deixa o texto em negrito */
-}
 #btn{
     display: inline-block;/* bloco retangular */
     padding: 0px; /* Ajuste o preenchimento conforme necessário */
-    background: radial-gradient(circle, rgba(148, 8, 199, 0.694) 20%, rgba(141, 26, 230, 0.637) 50%, rgba(0, 0, 0, 0.6) 80%);
+    background: radial-gradient(circle, rgba(148, 8, 199, 0.694) 20%, rgba(141, 26, 230, 0.637) 50%, rgba(122, 3, 202, 0.665) 80%);
     color: white; /* Cor do texto do botão */
     text-align: center;  
     text-decoration: none; /* tirar o ___ em baixo de ver mais */
-    font-size: 16px; /* Tamanho da fonte do botão */
+    font-size: 20px; /* Tamanho da fonte do botão */
     border: none; /* Remove a borda do botão */
-    border-radius: 5px; /* Borda arredondada do botão */
+    border-radius: 15px; /* Borda arredondada do botão */
     cursor: pointer;  /* para indicar que é clicavel */
     font-weight: bold; /* Deixa o texto em negrito */
 }
+
 #text1{
     width: 200px;
     height: 20px;
     border-radius: 30px;
 }
 
-  
+/*********** portfolio *************/
 
+#portfolio {
+    grid-area: portfolio;
+    display: grid;
+    background: url('/Portifolio/img/sodoces.jpg');
+    background-repeat: repeat;
+}
 
-  
+#portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: repeat;
+    text-align: center;
+}
+
+#portfolio h2 {
+    text-align: center;
+    color: #f2f7ff;
+    font-size: 40px;
+}
+
+#portfolio .titulo-portfolio {
+    
+    background-repeat: repeat;
+    background-position: center;
+    padding: 5px;
+    background-image: url('/img/sodoces.jpg');
+}
+
+.img-container {
+    position: relative;
+    
+
+    
+}
+
+.img-container .img_gallery  {
+
+        width: 170px; /* largura desejada */
+        height: 270px; /* altura desejada */
+        border: 2px solid black; /* largura, estilo e cor da borda */
+        border-radius: 5px; /* raio de curvatura para a borda */
+    
+    
+
+}
+
+.boxImg {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease;
+    margin-top: auto;
+
+    opacity: 0;
+    border-radius: 15px; /* raio de curvatura para a borda */
+}
+
+.img-container:hover .boxImg {
+    opacity: 1;
+}
+
+.zoom-text {
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s linear;
+}
+
+.boxImg h2 {
+    padding: 15px 0;
+}
+
+.boxImg a {
+    text-decoration: none;
+    color: #f2f7ff;
+    margin-top: 25px;
+}
+
+.zoom-text:hover {
+    cursor: zoom-in;
+    transform: scale(1.1);
+}
+
+.image-view {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    right: 0;
+}
+
+.sec.dark .image-view {
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+}
+
+.image-box {
+    width: 100%;
+    max-width: 1010px;
+    height: 538px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in-top 1s ease 0s 1 normal none;
+}
+
+@keyframes slide-in-top {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.git-projects {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+ #prev-btn img,
+#next-btn img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#prev-btn img {
+    left: -50px;
+    font-size: 50px;
+    transform: rotate(180deg);
+}
+
+#next-btn img {
+    right: -50px;
+    font-size: 50px;
+} 
+#close img {
+    position: absolute;
+    color: #f2f7ff;
+    right: 0;
+    top: -36px;
+    height: auto;
+    width: 26px;
+    cursor: pointer
+}
+
+.sec.dark .git-projects img{
+    filter: brightness(0);
+}
+
+.sec.dark .git-projects span{
+    color: #09090A;
+}
+
+.sec.dark #prev-btn img {
+    color: #09090A;
+}
+
+.sec.dark #close img {
+    color: #09090A;
+}
+
+.sec.dark #next-btn img {
+    color: #09090A;
+}
+
+#next-btn:hover,
+#prev-btn:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 600px) {   
+    #portfolio .container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .image-box {
+        width: 94%;
+        height: 150px;
+        top: 27%;
+    }
+    #next-btn img {
+        right: 0;
+        top: 51%;
+        border-radius: 24px;
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #prev-btn img  {
+        left: 0;
+        top: 42%;
+        border-radius: 24px;
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}

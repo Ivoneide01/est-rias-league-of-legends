@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../LeagueofLegends"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "exercicios"
+	}
+}
