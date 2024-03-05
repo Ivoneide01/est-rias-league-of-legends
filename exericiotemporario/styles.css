@@ -8,6 +8,8 @@ section{
 }
 
 
+
+
 .animate__animated .animate__bounce{
     text-align: center;
 }
@@ -75,9 +77,11 @@ section{
     text-decoration: none; /* tirar o ___ em baixo de ver mais */
     font-size: 20px; /* Tamanho da fonte do botão */
     border: none; /* Remove a borda do botão */
-    border-radius: 15px; /* Borda arredondada do botão */
+    border-radius: 25px; /* Borda arredondada do botão */
     cursor: pointer;  /* para indicar que é clicavel */
     font-weight: bold; /* Deixa o texto em negrito */
+   
+
 }
 
 #text1{
@@ -134,9 +138,14 @@ section{
         height: 270px; /* altura desejada */
         border: 2px solid black; /* largura, estilo e cor da borda */
         border-radius: 5px; /* raio de curvatura para a borda */
-    
-    
+}
 
+.img_gallery{
+    transition: filter 0.3s ease;
+}
+
+.img_gallery:hover{
+    filter: blur(8px); /* Aplica o efeito de desfoque somente na imagem quando o mouse estiver sobre ela */
 }
 
 .boxImg {
@@ -151,14 +160,25 @@ section{
     justify-content: center;
     transition: opacity 1s ease;
     margin-top: auto;
-
     opacity: 0;
     border-radius: 15px; /* raio de curvatura para a borda */
+
 }
 
 .img-container:hover .boxImg {
     opacity: 1;
 }
+
+
+.img-container:hover .boxImg {
+    opacity: 1;
+    
+}
+
+.img-container:hover .img_gallery {
+    filter: blur(8px); /* Aplica o efeito de desfoque apenas à imagem quando o mouse estiver sobre o contêiner */
+}
+
 
 .zoom-text {
     width: 50px;
@@ -171,6 +191,8 @@ section{
     font-weight: bold;
     transition: transform 0.2s linear;
 }
+
+
 
 .boxImg h2 {
     padding: 15px 0;
@@ -312,3 +334,5 @@ section{
         background-color: rgba(0, 0, 0, 0.8);
     }
 }
+
+
