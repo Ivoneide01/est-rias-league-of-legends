@@ -90,6 +90,16 @@ section{
     border-radius: 30px;
 }
 
+button {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remover a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor ao passar */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
 /*********** portfolio *************/
 
 #portfolio {
