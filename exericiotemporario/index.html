@@ -18,7 +18,7 @@
     <header> 
             <a href="https://pt.cooltext.com" class="titulo"><img src="https://images.cooltext.com/5691745.png" width="917" height="92" alt="League of legends stories" /></a>
     </header>
-
+    
 <div>
     <section id="portfolio" >
         <div id="topPesquisarExtra">
@@ -28,19 +28,20 @@
             </a>
         <div>
             
-            <input type="text" name="txt1" id="text1"  />
-            <input type="button" name="botao" onclick="teste()" value="" id="btn" >
+            <input type="text" onkeyup="procurarCampeao()"  value="" id="text1"  />
+            <input type="button" name="botao" onclick="BuscarCampeao()" value="Buscar" id="btn" >
+            <div id="resultadoBusca"></div> 
         </div>
     </div>
 </div>
 
 
  <div class="container">
-    <article>                   
+    <article class="article">                   
         <div class="img-container">
             <img src="/exericiotemporario/img/nidalee.jpg" 
                 class="img_gallery" 
-                alt="image 1" 
+                alt="Nidalee" 
                 width="329"
                 height="261">
             <div class="boxImg">
@@ -51,11 +52,11 @@
         </div>
     </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/akali.jpg" 
                     class="img_gallery"  
-                    alt="image 2" 
+                    alt="akali" 
                     width="329" 
                     height="261">
 
@@ -67,11 +68,11 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/jhix2.jpg" 
                     class="img_gallery"  
-                    alt="image 3" 
+                    alt="jinx" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -84,11 +85,11 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/samira.jpg" 
                     class="img_gallery"  
-                    alt="image 4" 
+                    alt="samira" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -99,11 +100,11 @@
                     </div>
                 </div>
             </article>
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/Neeko_0.jpg"  
                     class="img_gallery"  
-                    alt="image 5" 
+                    alt="neeko" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -115,11 +116,11 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/ashe.jpg" 
                     class="img_gallery"  
-                    alt="image 6" 
+                    alt="ashe" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -132,11 +133,11 @@
             </article>
 
             
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/ari.jpg" 
                     class="img_gallery"  
-                    alt="image 6" 
+                    alt="ahri" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -148,11 +149,11 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/senna.jpg" 
                     class="img_gallery"  
-                    alt="image 6" 
+                    alt="senna" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -164,11 +165,11 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/lux.jpg" 
                     class="img_gallery"  
-                    alt="image 6" 
+                    alt="lux" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -180,7 +181,7 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/jhix3.jpg" 
                     class="img_gallery"  
@@ -196,7 +197,7 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/jhix3.jpg" 
                     class="img_gallery"  
@@ -212,11 +213,11 @@
                 </div>
             </article>
 
-            <article>
+            <article class="article">
                 <div class="img-container">
                     <img src="/exericiotemporario/img/jhix3.jpg" 
                     class="img_gallery"  
-                    alt="image 6" 
+                    alt="teste" 
                     width="329" 
                     height="261">
                     <div class="boxImg">
@@ -227,45 +228,11 @@
                     </div>
                 </div>
             </article>
-<!--
-
-            
-            <a href="https://github.com/Ivoneide01" 
-            class="git-projects" 
-            target="_blank">
-                <img src="img/link.png" 
-                alt="link para acessar os projetos de ivoneide" 
-                width="30" 
-                height="30"> 
-                <span>teste</span>
-            </a>            
-            <div class="boxteste">
-                <div class="image-view"></div>
-            </div>
-            <div class="image-box" id="image-box">
-                <div id="close">
-                    <img src="img/close.png" 
-                    alt="close portfolio da ivoneide"
-                    width="50" 
-                    height="50">
-                </div>
-                <div id="prev-btn">
-                    <img src="img/arrow.png" 
-                    alt="arrow portfolio 
-                    width="50" 
-                    height="50">
-                </div>
-                <div id="next-btn">
-                    <img src="img/arrow.png" 
-                    alt="arrow portfolio" 
-                    width="50" 
-                    height="50">
-                </div>
-            </div>
+    
         </div>
     </section>
 </div>
-<!--  -->
+
     <footer></footer>
     <script src="script.js"></script>
 </body>

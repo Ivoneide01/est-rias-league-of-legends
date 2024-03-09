@@ -91,16 +91,27 @@ section{
 }
 
 button {
-    background-color: #007bff; /* Cor de fundo */
+    background-color: #610d7d; /* Cor de fundo */
     color: white; /* Cor do texto */
     padding: 10px 20px; /* Espaçamento interno */
     border: none; /* Remover a borda */
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 15px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor ao passar */
     font-size: 16px; /* Tamanho da fonte */
+    border: 2px solid #ffffff;
+
 }
 
-/*********** portfolio *************/
+/*********** limpa o componente buscar campeao (fica transparente *************/
+
+#text1 {
+    color: rgba(0, 0, 0, 0.5); /* Texto com 50% de transparência */
+    font-weight: bold; /* Negrito */
+    
+}
+
+
+/*********** cards *************/
 
 #portfolio {
     grid-area: portfolio;
