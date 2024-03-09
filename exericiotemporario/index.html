@@ -9,107 +9,230 @@
 </head>
 <body>
     <video autoplay muted loop id="video-background">
-        <source src="/papeldeparede/gamers.mp4" type="video/mp4">
+        <source src="/exericiotemporario/papeldeparede/gamers.mp4" type="video/mp4">
         <source src="/exericiotemporario/papeldeparede/gamers.webm" type="video/webm">
         <source src="/exericiotemporario/papeldeparede/gamers.ogg" type="video/ogg">
         Seu navegador não suporta o elemento de vídeo.
     </video>
 
     <header> 
-        <a href="#" class="titulo">
-            <img src="https://images.cooltext.com/5691401.png" alt="Estórias League of Legends" />
-        </a>
+            <a href="https://pt.cooltext.com" class="titulo"><img src="https://images.cooltext.com/5691745.png" width="917" height="92" alt="League of legends stories" /></a>
     </header>
-    <nav> </nav>
-
-    <section>
-        <div>
+    
+<div>
+    <section id="portfolio" >
+        <div id="topPesquisarExtra">
+        <div class="pesquisarTop">
             <a class="pesquisar">
-                <img src="https://images.cooltext.com/5691406.png"/>
+                <a href="https://pt.cooltext.com"><img src="https://images.cooltext.com/5691761.png" width="250" height="50" alt="Buscar Campeão" /></a>
             </a>
-        </div>
         <div>
-            <input type="text" name="txt1" id="text1">
-            <input type="button" name="botao" onclick="teste()" value="Buscar" id="btn">
+            
+            <input type="text" onkeyup="procurarCampeao()"  value="" id="text1"  />
+            <input type="button" name="botao" onclick="BuscarCampeao()" value="Buscar" id="btn" >
+            <div id="resultadoBusca"></div> 
         </div>
-        <br>
-
-        <div>
-            <article>
-                <div class="card">
-                    <img src="/exericiotemporario/img/jhix2.jpg" alt="Imagem do Card">
-                    <div class="card-info">
-                      <h2>Nome 1</h2>
-                      <a href="/" class="buttonVermais">Ver Estória</a>
-                    </div>
-                </div>
-              
-                <div class="card">
-                    <img src="/exericiotemporario/img/lux.jpg" alt="Imagem do Card">
-                    <div class="card-info">
-                      <h2>Nome 2</h2>
-                      <a href="/" class="buttonVermais">Ver Estória</a>
-                    </div>
-                </div>
-              
-                <div class="card">
-                    <img src="/exericiotemporario/img/xai.jpg" alt="Imagem do Card">
-                    <div class="card-info">
-                      <h2>Nome 3</h2>                    
-                      <a href="#" class="buttonVermais">Ver Estória</a>
-                    </div>
-                </div>
-
-            <div class="card">
-                <img src="/exericiotemporario/img/senna.jpg" alt="Imagem do Card">
-                <div class="card-info">
-                  <h2>Nome 1</h2>
-                  <a href="/" class="buttonVermais">Ver Estória</a>
-                </div>
-            </div>
-          
-            <div class="card">
-                <img src="/exericiotemporario/img/samira.jpg" alt="Imagem do Card">
-                <div class="card-info">
-                  <h2>Nome 2</h2>
-                  <a href="/" class="buttonVermais">Ver Estória</a>
-                </div>
-            </div>
-          
-            <div class="card">
-                <img src="/exericiotemporario/img/Neeko_0.jpg" alt="Imagem do Card">
-                <div class="card-info">
-                  <h2>Nome 3</h2>
-                  <a href="/" class="buttonVermais">Ver Estória</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="/exericiotemporario/img/ashe.jpg" alt="Imagem do Card">
-                <div class="card-info">
-                  <h2>Nome 1</h2>
-                  <a href="/" class="buttonVermais">Ver Estória</a>
-                </div>
-            </div>
-          
-            <div class="card">
-                <img src="/exericiotemporario/img/ari.jpg" alt="Imagem do Card">
-                <div class="card-info">
-                  <h2>Nome 2</h2>
-                  <a href="/" class="buttonVermais">Ver Estória</a>
-                </div>
-            </div>
-          
-            <div class="card">
-                <img src="/exericiotemporario/img/nidalee.jpg" alt="Imagem do Card">
-                <div class="card-info">
-                  <h2>Nome 3</h2>
-                  <a href="/" class="buttonVermais">Ver Estória</a>
-                </div>
-            </div>
-        </article>
     </div>
+</div>
+
+
+ <div class="container">
+    <article class="article">                   
+        <div class="img-container">
+            <img src="/exericiotemporario/img/nidalee.jpg" 
+                class="img_gallery" 
+                alt="Nidalee" 
+                width="329"
+                height="261">
+            <div class="boxImg">
+                <div class="zoom-text">
+                </div>
+                <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+            </div>
+        </div>
+    </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/akali.jpg" 
+                    class="img_gallery"  
+                    alt="akali" 
+                    width="329" 
+                    height="261">
+
+                    <div class="boxImg">
+                        <div class="zoom-text"> 
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/jhix2.jpg" 
+                    class="img_gallery"  
+                    alt="jinx" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+
+
+                    </div>
+                </div>
+            </article>
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/samira.jpg" 
+                    class="img_gallery"  
+                    alt="samira" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/Neeko_0.jpg"  
+                    class="img_gallery"  
+                    alt="neeko" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/ashe.jpg" 
+                    class="img_gallery"  
+                    alt="ashe" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                           
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/ari.jpg" 
+                    class="img_gallery"  
+                    alt="ahri" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/senna.jpg" 
+                    class="img_gallery"  
+                    alt="senna" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/lux.jpg" 
+                    class="img_gallery"  
+                    alt="lux" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/jhix3.jpg" 
+                    class="img_gallery"  
+                    alt="image 6" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/jhix3.jpg" 
+                    class="img_gallery"  
+                    alt="image 6" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article">
+                <div class="img-container">
+                    <img src="/exericiotemporario/img/jhix3.jpg" 
+                    class="img_gallery"  
+                    alt="teste" 
+                    width="329" 
+                    height="261">
+                    <div class="boxImg">
+                        <div class="zoom-text">
+                            
+                        </div>
+                        <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                    </div>
+                </div>
+            </article>
+    
+        </div>
     </section>
+</div>
+
     <footer></footer>
     <script src="script.js"></script>
 </body>
