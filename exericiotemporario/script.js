@@ -23,9 +23,37 @@ function procurarCampeao() {
 }
 
 function abrirPopup() {
-  document.getElementById('popup').style.display = 'block';
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+  popup.style.overflow = 'auto'; // Adiciona barra de rolagem se necessário
 }
 
 document.getElementById('fechar').addEventListener('click', function() {
-  document.getElementById('popup').style.display = 'none';
+  var popup = document.getElementById('popup');
+  popup.style.display = 'none';
 });
+
+function expandirConteudo() {
+  var popup = document.getElementById('popup');
+  popup.style.maxHeight = 'none';
+  document.getElementById('verMais').style.display = 'none';
+}
+
+window.onload = function() {
+  var popup = document.getElementById('popup');
+  var verMaisBtn = document.getElementById('verMais');
+
+  if (popup.scrollHeight > popup.clientHeight) {
+      verMaisBtn.style.display = 'block';
+  }
+};
+
+function fecharPopup() {
+  var popup = document.getElementById('popup');
+  var verMaisBtn = document.getElementById('verMais');
+
+  popup.style.maxHeight = '';
+  verMaisBtn.style.display = 'none';
+  popup.style.overflow = ''; // Limpa a propriedade de overflow
+}
+
