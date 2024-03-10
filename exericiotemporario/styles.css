@@ -112,12 +112,6 @@ button {
 
 
 
-#verMais {
-    display: none;
-  }
-  
-
-
 /*********** cards *************/
 
    /* Estilo para o popup */
@@ -125,15 +119,17 @@ button {
     position:fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* centralizado */
     background-color: rgb(0, 0, 0);
     border: 1px solid #f2f7ff;
     padding: 20px;
     width: 600px;
     height: 400px;
-    z-index: 1000;
+    z-index: 1000;/* Garante que o popup esteja acima de outros elementos na página */
     display: none;
     border-radius: 15px;
+    white-space: pre-line; /* Mantém as quebras de linha e espaços em branco */
+  
 }
 
 #fechar {
@@ -145,8 +141,24 @@ button {
 
 .sobretitulo{
         font-size: 8px; /* Define o tamanho da fonte para 16 pixels */
+        font-style: oblique;
       
 }
+
+/* Estilizando a imagem Nidalee */
+#popup img  {
+    height: auto; /* Mantém a proporção da imagem */
+    width: 120px;
+}
+
+
+/*********** efeitos *************/
+
+
+  
+
+
+
 
 /*********** cards *************/
 

@@ -1,3 +1,5 @@
+// botão procurar campeao
+
 function procurarCampeao() {
   var inputValor = document.getElementById('text1').value.toLowerCase();
   var resultadoBusca = document.getElementById('resultadoBusca');
@@ -22,17 +24,21 @@ function procurarCampeao() {
   }
 }
 
+
+// abrirPopup
+
 function abrirPopup() {
   var popup = document.getElementById('popup');
   popup.style.display = 'block';
   popup.style.overflow = 'auto'; // Adiciona barra de rolagem se necessário
+  
 }
 
 document.getElementById('fechar').addEventListener('click', function() {
   var popup = document.getElementById('popup');
   popup.style.display = 'none';
 });
-
+// expandir Popup
 function expandirConteudo() {
   var popup = document.getElementById('popup');
   popup.style.maxHeight = 'none';
@@ -46,8 +52,10 @@ window.onload = function() {
   if (popup.scrollHeight > popup.clientHeight) {
       verMaisBtn.style.display = 'block';
   }
-};
+}
 
+
+// fechar Popup
 function fecharPopup() {
   var popup = document.getElementById('popup');
   var verMaisBtn = document.getElementById('verMais');
@@ -56,4 +64,11 @@ function fecharPopup() {
   verMaisBtn.style.display = 'none';
   popup.style.overflow = ''; // Limpa a propriedade de overflow
 }
+
+
+
+
+
+
+
 
