@@ -18,6 +18,8 @@
     <header> 
             <a href="#" class="titulo"><img src="https://images.cooltext.com/5691745.png" width="917" height="92" alt="League of legends stories" /></a>
     </header>
+
+    
     
 <div>
     <section id="portfolio" >
@@ -36,6 +38,7 @@
 </div>
 
 
+
  <div class="container">
     <article class="article">                   
         <div class="img-container">
@@ -47,7 +50,13 @@
             <div class="boxImg">
                 <div class="zoom-text">
                 </div>
-                <button onclick="window.open('https://github.com/Ivoneide01', '_blank')">Ver Estória</button>
+                <button onclick="abrirPopup()">Ver Estória</button>
+
+                <div id="popup">
+                    <div id="fechar" onclick="fecharPopup()">Fechar [X]</div>
+                    <h1>História do Campeão</h1>
+                    <p>Aqui vai a história do campeão...</p>
+                </div>
             </div>
         </div>
     </article>
