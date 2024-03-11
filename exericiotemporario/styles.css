@@ -108,7 +108,6 @@ button {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url('/exericiotemporario/papeldeparede/floresta-ndalee.mp4'); /* Caminho para o vídeo */
     background-size: auto; /* Tamanho original do vídeo */
     background-repeat: repeat; /* Repete o vídeo horizontal e verticalmente */
     pointer-events: none; /* Garante que o vídeo não seja clicável */
@@ -117,14 +116,6 @@ button {
     position: absolute;
     
 }
-
-
-
-
-
-
-
-
 
 /*********** limpa o componente buscar campeao *************/
 
@@ -137,37 +128,6 @@ button {
 
 
 /*********** livro *************/
-
-#book {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 20px;
-}
-
-.page {
-    display: none;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-#next-page {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#next-page:hover {
-    background-color: #0056b3;
-}
-
-.show-page {
-    display: block !important;
-}
 
 
    /* Estilo para o popup */
@@ -187,6 +147,8 @@ button {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
     border-radius: 10px; /* Bordas arredondadas */
     text-align: justify; /* Texto justificado */
+    overflow-y: hidden; /* Impede a rolagem para baixo */
+    background: radial-gradient(circle, #023902, #000000);
     
     
   
@@ -202,12 +164,14 @@ button {
 .sobretitulo{
         font-size: 8px; /* Define o tamanho da fonte para 16 pixels */
         font-style: oblique;
+        
       
 }
 
 /* Estilizando a imagem Nidalee */
 #popup img  {
     height: auto; /* Mantém a proporção da imagem */
+    
 }
 
 
