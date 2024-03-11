@@ -149,6 +149,9 @@ button {
     text-align: justify; /* Texto justificado */
     overflow-y: hidden; /* Impede a rolagem para baixo */
     background: radial-gradient(circle, #023902, #000000);
+    text-align: justify;
+    padding: 50px; /* Adiciona margem interna ao redor do conteúdo */
+    margin: 20px; /* Adiciona margem externa ao redor do elemento */
     
     
   
