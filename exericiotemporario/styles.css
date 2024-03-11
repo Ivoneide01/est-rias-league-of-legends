@@ -179,7 +179,7 @@ button {
     background-color: rgb(0, 0, 0);
     border: 1px solid #f2f7ff;
     width: 1000px;
-    height: 300px;
+    height: 450px;
     z-index: 1000;/* Garante que o popup esteja acima de outros elementos na página */
     display: none;
     border-radius: 15px;
