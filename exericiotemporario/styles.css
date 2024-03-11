@@ -102,6 +102,30 @@ button {
 
 }
 
+#video-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('/exericiotemporario/papeldeparede/floresta-ndalee.mp4'); /* Caminho para o vídeo */
+    background-size: auto; /* Tamanho original do vídeo */
+    background-repeat: repeat; /* Repete o vídeo horizontal e verticalmente */
+    pointer-events: none; /* Garante que o vídeo não seja clicável */
+    opacity: 0.4; /* Define a opacidade do plano de fundo */
+    min-width: 100%; /* Garantir que o vídeo não fique menor que a tela */
+    position: absolute;
+    
+}
+
+
+
+
+
+
+
+
+
 /*********** limpa o componente buscar campeao *************/
 
 #text1 {
@@ -112,23 +136,58 @@ button {
 
 
 
-/*********** cards *************/
+/*********** livro *************/
+
+#book {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#next-page {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#next-page:hover {
+    background-color: #0056b3;
+}
+
+.show-page {
+    display: block !important;
+}
+
 
    /* Estilo para o popup */
-   #popup {
+#popup {
     position:fixed;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* centralizado */
     background-color: rgb(0, 0, 0);
     border: 1px solid #f2f7ff;
-    padding: 20px;
-    width: 600px;
-    height: 400px;
+    width: 1000px;
+    height: 300px;
     z-index: 1000;/* Garante que o popup esteja acima de outros elementos na página */
     display: none;
     border-radius: 15px;
     white-space: pre-line; /* Mantém as quebras de linha e espaços em branco */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: justify; /* Texto justificado */
+    
+    
   
 }
 
@@ -148,7 +207,6 @@ button {
 /* Estilizando a imagem Nidalee */
 #popup img  {
     height: auto; /* Mantém a proporção da imagem */
-    width: 120px;
 }
 
 
