@@ -26,8 +26,10 @@
         <div id="topPesquisarExtra">
         <div class="pesquisarTop">
             <a class="pesquisar">
+                <a href="#"><img src="https://images.cooltext.com/5691761.png" width="250" height="50" alt="Buscar Campeão" /></a>
             </a>
         <div>
+            
             <input type="text" onkeyup="procurarCampeao()"  value="" id="text1"  />
             <input type="button" name="botao" onclick="BuscarCampeao()" value="Buscar" id="btn" >
             <div id="resultadoBusca"></div> 
@@ -51,16 +53,14 @@
                 <button onclick="abrirPopup()">Ver Estória</button>
             </div>
         </div>
-        
         <div id="popup">
-            <div id="book">
-                <div class="img-nidalee"><img src="/img/img-estorias/nidaleeestoria.png" alt=""></div>
-            <video id="video-background" autoplay muted loop>
-                <source src="/papeldeparede/floresta-ndalee.mp4" type="video/mp4">
-            </video>
             <div id="fechar" onclick="fecharPopup()">Fechar [X]</div>
+            <img src="/img/img-estorias/nidaleeestoria.png" alt="nidalee">
             <h2 class="nidalee">Nidalee <p class="sobretitulo">A CAÇADORA BESTIAL</p></h2>
             <div id="background">
+                <!-- Conteúdo do seu site aqui -->
+            </div>
+            
             <p>SANGUE HUMANO</p>
             <p>Um estampido. Cheiro de graxa, fumaça e pólvora.
 
@@ -144,10 +144,7 @@ Percy reconheceu os olhos verde esmeralda que estavam mais próximos dele. Agora
 "Você foi avisado."
 
 Não houve tempo para gritar antes que os dentes afiados perfurassem sua garganta e, dessa vez, eles não pararam quando o sangue escorreu.</p>
-
-    </div>
-</div>
-    
+        </div>
         <button id="verMais" style="display: none;" onclick="expandirConteudo()">Ver Mais</button>
         
         <script src="script.js"></script>
