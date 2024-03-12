@@ -141,6 +141,7 @@ button {
     display: none;
     border-radius: 15px;
     white-space: pre-line; /* Mantém as quebras de linha e espaços em branco */
+    background: radial-gradient(circle, #012401, #000000);
   
 }
 
