@@ -147,7 +147,7 @@ button {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
     border-radius: 10px; /* Bordas arredondadas */
     text-align: justify; /* Texto justificado */
-    background: radial-gradient(circle, #023902, #000000);
+    background: radial-gradient(circle, #012401, #000000);
     text-align: justify;
     padding: 50px; /* Adiciona margem interna ao redor do conteúdo */
     margin: 20px; /* Adiciona margem externa ao redor do elemento */
