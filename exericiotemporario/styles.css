@@ -147,7 +147,6 @@ button {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
     border-radius: 10px; /* Bordas arredondadas */
     text-align: justify; /* Texto justificado */
-    overflow-y: hidden; /* Impede a rolagem para baixo */
     background: radial-gradient(circle, #023902, #000000);
     text-align: justify;
     padding: 50px; /* Adiciona margem interna ao redor do conteúdo */
@@ -175,6 +174,13 @@ button {
 #popup img  {
     height: auto; /* Mantém a proporção da imagem */
     
+}
+
+.img-nidalee{
+    text-align: center;
+    height: 210px; 
+    margin-left: auto; /* centraliza a imagem horizontalmente */
+    margin-right: auto; /* centraliza a imagem horizontalmente */
 }
 
 
